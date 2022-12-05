@@ -80,7 +80,7 @@ charactersMap.forEach((row, i) => {
           },
           scale: 3,
           animate: true,
-          dialogue: ['...', 'Hey mister, have you seen my Doggochu?']
+          dialogue: ['...', 'HEEEELLLOOOOOO!!!', 'How are you today Mrs. Von Rosenberg']
         })
       )
     }
