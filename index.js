@@ -80,7 +80,7 @@ charactersMap.forEach((row, i) => {
           },
           scale: 3,
           animate: true,
-          dialogue: ['...', 'HEEEELLLOOOOOO!!!', 'How are you today Mrs. Von Rosenberg']
+          dialogue: ['...', 'HEEEELLLOOOOOO!!!', 'How are you today?', 'personaly, IM GREAT!!!']
         })
       )
     }
@@ -98,7 +98,7 @@ charactersMap.forEach((row, i) => {
             hold: 60
           },
           scale: 3,
-          dialogue: ['My bones hurt.']
+          dialogue: ['I will kill with you with a marker,', 'and it WILL be a permanent one']
         })
       )
     }
