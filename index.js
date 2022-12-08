@@ -98,7 +98,7 @@ charactersMap.forEach((row, i) => {
             hold: 60
           },
           scale: 3,
-          dialogue: ['I will kill with you with a marker,', 'and it WILL be a permanent one']
+          dialogue: ['I will kill with you with a marker,', 'and it WILL be permanent']
         })
       )
     }
