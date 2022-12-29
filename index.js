@@ -80,7 +80,7 @@ charactersMap.forEach((row, i) => {
           },
           scale: 3,
           animate: true,
-          dialogue: ['MERRYYYYY CHRISTMAS']   })
+          dialogue: ['hey there wedgnd']   })
       ) 
     }
     // 1031 === oldMan
