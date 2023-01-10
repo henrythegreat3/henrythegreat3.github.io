@@ -80,7 +80,7 @@ charactersMap.forEach((row, i) => {
           },
           scale: 3,
           animate: true,
-          dialogue: ['hey there wedgnd']   })
+          dialogue: ['hewo there (uwu),', 'just kidding, (im the guy dating your mom)', 'names Brad, Brad rad.', 'yes that is my real name.'  })
       ) 
     }
     // 1031 === oldMan
