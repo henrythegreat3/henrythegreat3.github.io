@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+  <body>
+    <h1>this is a webpage</h1>
+    <button onclick="OL()"id="button1">Click Me!</button>
+    <button onclick="Translate()" id="button2">translate</button>
+    <div id="three">hello</div>
+    <style>
+     
+
+      #three{
+      color: black;
+      }
+      
+      @keyframes change{
+        from{
+          color: white;
+        }
+        to{
+          color: black
+        }
+      }
+      #button1 {
+      background-color: black;
+      color: white;
+      border: none;
+      }
+       #button2 {
+      background-color: white;
+      color: white;
+      border: none;
+      }
+    </style>
+    <script>
+      var two = document.getElementById("button2");
+      var one = document.getElementById("button1");
+      var test = document.getElementById("three");
+      function OL(){
+      one.innerHTML = "hola, teniendo una beuno dia?";
+      two.style.backgroundColor = "#000";
+      
+      
+      };
+    
+        function Translate(){
+          one.innerHTML = "hello, having a good day?";
+          test.innerHTML = "why is jillian like that?"
+
+          Change();
+      }
+    </script>
+  </body>
+</html>
