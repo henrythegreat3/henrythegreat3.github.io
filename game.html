@@ -172,7 +172,24 @@
         this.grid.push(gridLine);
     }
     this.player = this.actors.filter(function (actor) {
-
+        return actor.type === "player"
+    })[0];
+    this.status = this.finishDelay = null;
     }
+
+    function element(name, className){
+        var elem = document.createElement(name);
+        if(className) elem.ClassName = className;
+        return elem;
+    }
+    function DOMDisplay(parent, level){
+        this.wrap = parent.appendChild(element("div", "game"));
+        this.level = level this.wrap.appendChild(this.drawBackground());
+        this.wrap.appendLayer = null;
+        this.drawFrame();
+    }
+
+    var scale = 5;
+    
 </script>
 </body>
