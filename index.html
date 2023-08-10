@@ -6,8 +6,8 @@
     <button onclick="Translate()" id="button2">translate</button>
     <div id="three">hello</div>
     <style>
-     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
- h1{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+h1{
    font-family: 'Roboto', sans-serif;
       }
 #three{
@@ -15,9 +15,13 @@ color: black;
       }
 @keyframes loadIn{
 from{
-
+ filter: blur(100%)
+ text-align: left;
 }
-
+to{
+filter: blur(0%)
+text-align: center;
+}
 }
 @keyframes change{
 from{
@@ -51,7 +55,7 @@ border: none;
     
         function Translate(){
           one.innerHTML = "hello, having a good day?";
-          test.innerHTML = "why is jillian like that?"
+          test.innerHTML = "ooga booga"
 
           Change();
       }
