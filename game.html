@@ -190,6 +190,30 @@
     }
 
     var scale = 5;
-    
+
+    DOMDisplay.prototype.drawBackground = functon() {
+        var table = element("table", "background");
+        table.style.width = this.level.width * scale + "px";
+        table.style.height = this.level.height * scale + "px";
+
+
+        
+        this.level.grib.forEach(function(row) {
+            var rowElement = table.appendChild(element("tr"));
+            rowElement.style.height = scale + "px";
+            row.forEach(function(type) {
+                rowElement.appendChild(element("td", type));
+            });
+        });
+        return table;
+    };
+        DOMDisplay.prototype.drawActors = function() {
+            var wrap = element("div");
+            this.level.actors.forEach(function(actor) {
+                var rect = wrap.appendChild(element("div", "actor" + actor.type));
+                rect.style.width = actor.size.x * scale + "px";
+            };
+        };
+    }
 </script>
 </body>
