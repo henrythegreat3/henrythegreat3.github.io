@@ -8,8 +8,7 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 h1{
-  animation-duration: 1.5s;
-  animation: loadIn;  
+	animation: loadIn ease-in-out 1s 1 forward;  
   font-family: 'Roboto', sans-serif;
       }
 #three{
@@ -17,11 +16,11 @@ color: black;
       }
 @keyframes loadIn{
 from{
- filter: blur(100%)
+ filter: blur(100%);
  text-align: left;
 }
 to{
-filter: blur(0%)
+filter: blur(0%);
 text-align: center;
 }
 }
