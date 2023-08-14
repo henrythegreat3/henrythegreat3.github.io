@@ -1,65 +1,45 @@
 <!Doctype html>
 <html>
   <body>
-    <h1>nothing to see here</h1>
-    <button onclick="OL()"id="button1">Click Me!</button>
-    <button onclick="Translate()" id="button2">translate</button>
-    <div id="three">hello</div>
+   <!DOCTYPE html>
+<html>
+<head>
+<title>Card Effect</title>
+</head>
+<body>
+
+  <div class="container">
+
+    
+    <a href="./GameCopy.html">
+    <div class="card">
+       <div class="face face1">
+         <div class="content">
+           <i class="fab fa-apple"></i>
+            <h3>HARCORE.</h3>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+                  <p>(totally not a game)</br></p>
+
+           <a href="#" type="button">Read More</a>
+         </div>
+       </div>
+    </div>
+    </a>
+    
+    
+    
+    
+    
+  </div>
+
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
-h1{
-	animation: loadIn ease-in-out 1s 1 forward;  
-  font-family: 'Roboto', sans-serif;
-      }
-#three{
-color: black;
-      }
-@keyframes loadIn{
-from{
- filter: blur(100%);
- text-align: left;
-}
-to{
-filter: blur(0%);
-text-align: center;
-}
-}
-@keyframes change{
-from{
-color: white;
-        }
-to{
-color: black
-        }
-      }
-#button1 {
-background-color: black;
-color: white;
-border: none;
-      }
-#button2 {
-background-color: white;
-color: white;
-border: none;
-      }
+
     </style>
     <script>
-      var two = document.getElementById("button2");
-      var one = document.getElementById("button1");
-      var test = document.getElementById("three");
-      function OL(){
-      one.innerHTML = "hola, teniendo una beuno dia?";
-      two.style.backgroundColor = "#000";
-      
-      
-      };
     
-        function Translate(){
-          one.innerHTML = "hello, having a good day?";
-          test.innerHTML = "ooga booga"
-
-          Change();
-      }
     </script>
   </body>
 </html>
