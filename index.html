@@ -2,13 +2,75 @@
 
 <html>
   <body>
-    
-    <div id="Welcome">WELCOME TO THE MEETING</div>
+    <button onclick="triggerOne()" id-"b1"><svg id="SVG1" fill="#fff" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-264.19 -264.19 1017.62 1017.62" xml:space="preserve" stroke="#000000" stroke-width="0.00489242"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M416.321,171.943c0-97.8-82.2-176.9-181-171.7c-89.5,5.2-160.3,79.1-162.4,168.6c0,44.7,16.6,86.3,45.8,118.6 c47.7,51.1,41.6,110.3,41.6,110.3c0,11.4,9.4,20.8,20.8,20.8h126.9c11.4,0,20.8-9.4,21.8-20.8c0,0-7-57.7,40.6-109.2 C399.621,257.243,416.321,215.643,416.321,171.943z M288.321,377.943h-87.4c-2.1-42.7-20.8-84.3-51-116.5 c-22.9-25-34.3-57.2-34.3-90.5c1-68.7,54.1-124.8,122.8-129c74.9-4.2,137.3,56.2,137.3,130c0,32.3-12.5,64.5-35.4,88.4 C309.121,293.643,290.421,335.243,288.321,377.943z"></path> <path d="M281.021,447.643h-73.9c-11.4,0-20.8,9.4-20.8,20.8s9.4,20.8,20.8,20.8h73.9c11.4,0,20.8-9.4,20.8-20.8 C301.821,457.043,292.521,447.643,281.021,447.643z"></path> </g> </g> </g></svg></button>
+    <div class="text">
+    <h1 id="Welcome">WELCOME TO THE MEETING<br></h1>
+    <h2 id="Credit">(BROUGHT TO YOU BY ALAN'S SON)<br></h2>
+      <div>
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
       body{
+        text-align: center;
         font-family: 'Oswald', sans-serif;
+        background: radial-gradient(circle, rgba(133,133,133,1) 0%, rgba(37,68,97,1) 100%);
+
+      }
+      button{
+        background: none;
+        border: none;
+      }
+      #Credit{
+        color: white;
+        font-size: 30px;
+        text-shadow: 10px 10px 5px #5A5A5A;
+
+        }
+      #Welcome{
+        color: white;
+        font-size: 70px;
+        text-shadow: 10px 10px 5px #5A5A5A;
+
+        }
+      @keyframes rotateOneSVG{
+        0%{
+          transform: rotate(0deg);
+          filter: none;
+        }
+        100%{
+          transform: rotate(180deg);
+          fliter: drop-shadow(0px -20px 10px #FFFF00);
+        }
+      @keyframes bodyAnim{
+        0%{
+        background: radial-gradient(circle, rgba(133,133,133,1) 0%, rgba(37,68,97,1) 100%);
+        }
+        100%{
+        background: #000;
+        }
+      @keyframes textAnim{
+        0%{
+          text-shadow: 10px 10px 5px #5A5A5A;
+          color: #fff;
+        }
+        100%{
+          color: #FFFF00;
+          text-shadow: none;
+        }
+        
       }
     </style>
+    <script>
+      function triggerOne(){
+        var buttonOne = document.getElementById("b1");
+        var text = document.getElementsByClassName("text")[0];
+        var svg = document.getElementById("SVG1");
+        var body = document.getElementsByTagName("body")[0];
+        svg.style.animation = "rotateOneSVG 1.5s ease-in-out forwards";
+        text.style.animation = "textAnim 1.5s forwards";
+        svg.style.fill = "#FFFF00";
+        body.style.background= "#000";
+      }
+    </script>
   </body>
 </html>
